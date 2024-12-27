@@ -9,7 +9,7 @@ class Tetrigo < Formula
 
   on_macos do
     url "https://github.com/Broderick-Westrope/tetrigo/releases/download/v0.2.0/tetrigo_0.2.0_darwin_all.tar.gz"
-    sha256 "79db9f5f52c0654d06a72839b5815880b9d2dc9e8bb8f1f213db1e49d7e35089"
+    sha256 "26dc31bbab32ed32ad62595795b948a8ce00609a783ef1286d9301e7e28bd303"
 
     def install
       bin.install "tetrigo"
@@ -20,7 +20,7 @@ class Tetrigo < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Broderick-Westrope/tetrigo/releases/download/v0.2.0/tetrigo_0.2.0_linux_amd64.tar.gz"
-        sha256 "6c8d32b24cf77b2388fbfda6967752ab27a398ece3dfc48ae3c0a025914c3472"
+        sha256 "33447244393d15c58e39907b28977cb96b4861e3331d7d6c2d717cc1936aec5b"
 
         def install
           bin.install "tetrigo"
@@ -30,7 +30,7 @@ class Tetrigo < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Broderick-Westrope/tetrigo/releases/download/v0.2.0/tetrigo_0.2.0_linux_arm64.tar.gz"
-        sha256 "b481104419133af184aa3d03a5ee01c973e0e1e6cd1b7f0a4192713db0bfaa8e"
+        sha256 "b62e409d9222d632c1b2e445c1eec843c54fa9c657f4809a7d53e3d4f970191f"
 
         def install
           bin.install "tetrigo"
