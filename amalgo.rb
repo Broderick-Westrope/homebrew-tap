@@ -5,21 +5,21 @@
 class Amalgo < Formula
   desc "Create consolidated snapshots of source code for analysis, documentation, and sharing with LLMs."
   homepage "https://github.com/Broderick-Westrope/amalgo"
-  version "0.4.0"
+  version "0.4.1"
   license "GNU GPLv3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Broderick-Westrope/amalgo/releases/download/v0.4.0/amalgo_Darwin_x86_64.tar.gz"
-      sha256 "7aadf57a60b81a516adee1b88626dce057ddbc5a8338f9954daf7a5493fd081c"
+      url "https://github.com/Broderick-Westrope/amalgo/releases/download/v0.4.1/amalgo_Darwin_x86_64.tar.gz"
+      sha256 "149bdcb9c1011dcebcaac6f8070b9283be7f332a9b4b5485cb9da65e523a80fd"
 
       def install
         bin.install "amalgo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Broderick-Westrope/amalgo/releases/download/v0.4.0/amalgo_Darwin_arm64.tar.gz"
-      sha256 "7dc51ca631a85be67b8e879847574db10dcaede24e6c6eef45ef5a13bfff3b8b"
+      url "https://github.com/Broderick-Westrope/amalgo/releases/download/v0.4.1/amalgo_Darwin_arm64.tar.gz"
+      sha256 "0bcdf3bb32692a17848dea0841b43eccadbc00bd86bced51d54c2170cd382f62"
 
       def install
         bin.install "amalgo"
@@ -30,8 +30,8 @@ class Amalgo < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Broderick-Westrope/amalgo/releases/download/v0.4.0/amalgo_Linux_x86_64.tar.gz"
-        sha256 "04dbb68d6257fd9e7ab65cfb4c2af666ebce04bae6e029899d5f8f22546d8dcf"
+        url "https://github.com/Broderick-Westrope/amalgo/releases/download/v0.4.1/amalgo_Linux_x86_64.tar.gz"
+        sha256 "1a056ce275b5c46e3362046cd47efd14c7a6aab47966a545987b353576051925"
 
         def install
           bin.install "amalgo"
@@ -40,8 +40,8 @@ class Amalgo < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Broderick-Westrope/amalgo/releases/download/v0.4.0/amalgo_Linux_arm64.tar.gz"
-        sha256 "c3dbf4cc187ecad3a400137b2393bc4b0bb8ef826794f84c57ff1fa685905758"
+        url "https://github.com/Broderick-Westrope/amalgo/releases/download/v0.4.1/amalgo_Linux_arm64.tar.gz"
+        sha256 "f79768769bcf704a65bcd127246e20d2a9ed4d31df3db638555c5a4c8ad72e06"
 
         def install
           bin.install "amalgo"
