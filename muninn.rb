@@ -5,7 +5,7 @@
 class Muninn < Formula
   desc "Code search index and MCP server for your GitHub repos"
   homepage "https://github.com/Broderick-Westrope/muninn"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Muninn < Formula
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/Broderick-Westrope/muninn/releases/download/v0.5.0/muninn_0.5.0_darwin_amd64.tar.gz"
-    sha256 "317c35577c0ab2c577912fdf2e86c8d4b2d047f1303518d34507cfda38c6eb73"
+    url "https://github.com/Broderick-Westrope/muninn/releases/download/v0.6.0/muninn_0.6.0_darwin_amd64.tar.gz"
+    sha256 "9e148adb0acdf63119a1ec0be9521d227ed228a90fc37a1fb74c5e710d9380e0"
 
     define_method(:install) do
       bin.install "muninn"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/Broderick-Westrope/muninn/releases/download/v0.5.0/muninn_0.5.0_darwin_arm64.tar.gz"
-    sha256 "1f8892514d9cd833228eea507dfff28c5c39099b86cdae40efee54498e9c5d33"
+    url "https://github.com/Broderick-Westrope/muninn/releases/download/v0.6.0/muninn_0.6.0_darwin_arm64.tar.gz"
+    sha256 "b8f0bfc4dea0112a4166fbf7280c9af302dd84a2101cd3cfd60373b7c91cca49"
 
     define_method(:install) do
       bin.install "muninn"
