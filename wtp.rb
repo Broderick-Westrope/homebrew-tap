@@ -5,15 +5,15 @@
 class Wtp < Formula
   desc "Worktree Plus - Enhanced worktree management with automated setup and hooks"
   homepage "https://github.com/Broderick-Westrope/wtp"
-  version "3.1.0"
+  version "3.2.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Broderick-Westrope/wtp/releases/download/v3.1.0/wtp_3.1.0_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "cd25eed6d82f52c095cd3f042a8856a56aeea9f536e192dc3e3b9ab91b2ab517"
+      url "https://github.com/Broderick-Westrope/wtp/releases/download/v3.2.0/wtp_3.2.0_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "a5946fdb4e7273e5df861a11dccd27201786189b1d4d6381f55b74f320bbeed3"
 
       def install
         bin.install "wtp"
@@ -101,8 +101,8 @@ class Wtp < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Broderick-Westrope/wtp/releases/download/v3.1.0/wtp_3.1.0_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "d1e780f8a6cda495874536877831268a621caddadfe95724bf10d340b49583f2"
+        url "https://github.com/Broderick-Westrope/wtp/releases/download/v3.2.0/wtp_3.2.0_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+        sha256 "b7e33c99326b415cf2cff736cfdca124348f82bcc5e29b54a0a171a72344e81a"
 
         def install
           bin.install "wtp"
@@ -188,8 +188,8 @@ class Wtp < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Broderick-Westrope/wtp/releases/download/v3.1.0/wtp_3.1.0_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "1d678665752b8160cee9e8c21785f277974333ed49bae26ae340fff7dfa6bffe"
+        url "https://github.com/Broderick-Westrope/wtp/releases/download/v3.2.0/wtp_3.2.0_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "e3a66cf88db3dc46c8316dc9b30cc44b3c16284cdf5042e980eed9de32291926"
 
         def install
           bin.install "wtp"
