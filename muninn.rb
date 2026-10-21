@@ -5,7 +5,7 @@
 class Muninn < Formula
   desc "Code search index and MCP server for your GitHub repos"
   homepage "https://github.com/Broderick-Westrope/muninn"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   depends_on "git"
@@ -13,8 +13,8 @@ class Muninn < Formula
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/Broderick-Westrope/muninn/releases/download/v0.9.0/muninn_0.9.0_darwin_amd64.tar.gz"
-    sha256 "b7a565b6e730dd3cfff3fabae913bfd90264118f20e1db92b10d4780e5552591"
+    url "https://github.com/Broderick-Westrope/muninn/releases/download/v0.10.0/muninn_0.10.0_darwin_amd64.tar.gz"
+    sha256 "5ff5bd32d42c61085781bd0b44c792d5951ce13ef837a2a1c91ece3f2e213162"
 
     define_method(:install) do
       bin.install "muninn"
@@ -22,8 +22,8 @@ class Muninn < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/Broderick-Westrope/muninn/releases/download/v0.9.0/muninn_0.9.0_darwin_arm64.tar.gz"
-    sha256 "6f45f08ae173573d3c237d090d7f41ad359adafe0621c95b85ccb51af09b3f6b"
+    url "https://github.com/Broderick-Westrope/muninn/releases/download/v0.10.0/muninn_0.10.0_darwin_arm64.tar.gz"
+    sha256 "0fbd85f474e09ee31ac367db2f37a2c89e1a71abc7cd8624dc42dc67ca2ac2b1"
 
     define_method(:install) do
       bin.install "muninn"
@@ -33,7 +33,8 @@ class Muninn < Formula
 
   def caveats
     <<~EOS
-      Create ~/.config/muninn/config.json (see the README for the schema), then:
+      Create ~/.config/muninn/config.json (schema:
+      https://github.com/Broderick-Westrope/muninn/blob/master/docs/configuration.md), then:
         muninn sync             # first sync: clone mirrors + build the index
         muninn sync --install   # schedule syncs via launchd (hourly by default)
 
